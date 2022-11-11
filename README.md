@@ -1,4 +1,4 @@
-![header](https://capsule-render.vercel.app/api?type=waving&color=auto&height=200&section=header&text=Streamlit%20with%20ML%20MODEL&fontSize=50&animation=fadeIn&fontAlignY=30&desc=Create%20KNN%20ML%20models%20and%20Web%20pages&descAlignY=51&descAlign=62)
+![header](https://capsule-render.vercel.app/api?type=waving&color=auto&height=200&section=header&text=KNN%20MODEL%20with%20Streamlit&fontSize=50&animation=fadeIn&fontAlignY=30&desc=Changing%20KNN%20models%20to%20Web%20pages&descAlignY=51&descAlign=62)
 
 # KNN 모델을 이용한 타이타닉 생존자 예측 웹 구축
   - Link: https://dorae222-streamlit-adapting-knn-s-knn-algorithm-wmnse6.streamlit.app/
