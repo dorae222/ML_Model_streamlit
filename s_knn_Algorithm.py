@@ -148,6 +148,8 @@ elif choose == "DataFrame":
 elif choose == "Predicting":
     with forcasting_container:
         st.title("Predicting")
+        st.subheader("변수들을 조정하고, 예측버튼을 클릭해주세요!")
+        st.subheader("변수 설명과 유의점은 아래를 참고 부탁드립니다!!")
         #######################################
         # 첫번째 행
         r1_col1, r1_col2, r1_col3 = st.columns(3)
