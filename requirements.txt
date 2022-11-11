@@ -1,0 +1,8 @@
+streamlit
+streamlit_option_menu
+mlxtend
+numpy
+pandas
+joblib
+plotly
+seaborn
