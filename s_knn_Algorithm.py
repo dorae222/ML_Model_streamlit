@@ -177,11 +177,35 @@ elif choose == "Predicting":
         Embarked_S_option = (0,1)
         Embarked_S = r3_col3.selectbox("Embarked_S", Embarked_S_option)
         #######################################
+        # 네번째 행
+        st.write("---")
+        r4_col1= st.columns(1)
+        model_option = ('KNN','DecisionTree','bagging','ExtraTree','RandomForest','AdaBoosting','ExtremeBoosting','GradientBoosing','vote_soft','grid_soft')
+        model_selcect = r4_col1.selectbox("DecisionTruee", model_option)
         # 예측 버튼
         predict_button = st.button("예측")
         # 예측 결과
         if predict_button:
-            model = joblib.load('knn_model.pkl')
+            if model_selcect == 'KNN':
+                model = joblib.load('kmm_model.pkl')
+            if model_selcect == 'DecisionTree':
+                model = joblib.load('DecisionTree.pkl')
+            if model_selcect == 'bagging':
+                model = joblib.load('bagging.pkl')
+            if model_selcect == 'ExtraTree':
+                model = joblib.load('ExtraTree.pkl')
+            if model_selcect == 'RandomForest':
+                model = joblib.load('RandomForest.pkl')
+            if model_selcect == 'AdaBoosting':
+                model = joblib.load('AdaBoosting.pkl')
+            if model_selcect == 'ExtremeBoosting':
+                model = joblib.load('ExtremeBoosting.pkl')
+            if model_selcect == 'GradientBoosing':
+                model = joblib.load('GradientBoosing.pkl')
+            if model_selcect == 'vote_soft':
+                model = joblib.load('vote_soft.pkl')
+            if model_selcect == 'grid_soft':
+                model = joblib.load('grid_soft.pkl')
 
             variable = np.array([Pclass, Age, SibSp, Parch, Fare, Sex_male, Embarked_Q,Embarked_S])
             pred = model.predict([variable])
