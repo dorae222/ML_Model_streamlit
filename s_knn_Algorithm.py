@@ -52,7 +52,7 @@ forcasting_container = st.container()
 if choose == "About":
     with header_container:
         st.header("타이타닉 생존자 예측하기")
-        st.image('titanic.png')
+        st.image('img/titanic.png')
         st.subheader("Streamlit을 활용하여 ML모델을 웹으로 표현해보자!")
         st.write("처음 만들어 보는 ML 웹이지만, 즐겁게 봐주세요!")
         st.write("---")
@@ -200,11 +200,11 @@ elif choose == "Predicting":
 
         if predict_button:
             if model_select == 'KNN':
-                model = joblib.load('knn_model.pkl')
+                model = joblib.load('/pkl/knn_model.pkl')
                 pred = model.predict([variable])
 
             if model_select == 'DecisionTree':
-                model = joblib.load('DecisionTree.pkl')
+                model = joblib.load('/pkl/DecisionTree.pkl')
                 pred = model.predict([variable])
 
             if model_select == 'bagging':
