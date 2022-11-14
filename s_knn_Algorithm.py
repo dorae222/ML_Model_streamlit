@@ -187,30 +187,30 @@ elif choose == "Predicting":
         st.write("---")
         r4_col1= st.columns(1)
         model_option = ('KNN','DecisionTree','bagging','ExtraTree','RandomForest','AdaBoosting','ExtremeBoosting','GradientBoosing','vote_soft','grid_soft')
-        model_selcect = r4_col1.selectbox("DecisionTree", model_option)
+        model_select = r4_col1.selectbox("DecisionTree", model_option)
         # 예측 버튼
         predict_button = st.button("예측")
         # 예측 결과
         if predict_button:
-            if model_selcect == 'KNN':
+            if model_select == 'KNN':
                 model = joblib.load('kmm_model.pkl')
-            if model_selcect == 'DecisionTree':
+            if model_select == 'DecisionTree':
                 model = joblib.load('DecisionTree.pkl')
-            if model_selcect == 'bagging':
+            if model_select == 'bagging':
                 model = joblib.load('bagging.pkl')
-            if model_selcect == 'ExtraTree':
+            if model_select == 'ExtraTree':
                 model = joblib.load('ExtraTree.pkl')
-            if model_selcect == 'RandomForest':
+            if model_select == 'RandomForest':
                 model = joblib.load('RandomForest.pkl')
-            if model_selcect == 'AdaBoosting':
+            if model_select == 'AdaBoosting':
                 model = joblib.load('AdaBoosting.pkl')
-            if model_selcect == 'ExtremeBoosting':
+            if model_select == 'ExtremeBoosting':
                 model = joblib.load('ExtremeBoosting.pkl')
-            if model_selcect == 'GradientBoosing':
+            if model_select == 'GradientBoosing':
                 model = joblib.load('GradientBoosing.pkl')
-            if model_selcect == 'vote_soft':
+            if model_select == 'vote_soft':
                 model = joblib.load('vote_soft.pkl')
-            if model_selcect == 'grid_soft':
+            if model_select == 'grid_soft':
                 model = joblib.load('grid_soft.pkl')
             else:
                 st.write('올바른 모델을 선택해주세요.')
