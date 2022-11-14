@@ -185,6 +185,7 @@ elif choose == "Predicting":
         #######################################
         # 네번째 행
         st.write("---")
+        st.image('model_reference.png')
         r4_col1, r4_col2= st.columns(2)
 
         model_option = ('KNN','DecisionTree','bagging','ExtraTree','RandomForest','AdaBoosting','ExtremeBoosting','GradientBoosing','vote_soft','grid_soft')
@@ -216,7 +217,7 @@ elif choose == "Predicting":
             if model_select == 'grid_soft':
                 model = joblib.load('grid_soft.pkl')
             else:
-                st.write('올바른 모델을 선택해주세요.')
+                pass
 
             variable = np.array([Pclass, Age, SibSp, Parch, Fare, Sex_male, Embarked_Q,Embarked_S])
             pred = model.predict([variable])
