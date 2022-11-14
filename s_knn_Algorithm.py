@@ -185,7 +185,7 @@ elif choose == "Predicting":
         #######################################
         # 네번째 행
         st.write("---")
-        st.image('model_reference.png')
+        st.image('img/model_reference.png')
         r4_col1, r4_col2= st.columns(2)
 
         model_option = ('KNN','DecisionTree','bagging','ExtraTree','RandomForest','AdaBoosting','ExtremeBoosting','GradientBoosing','vote_soft','grid_soft')
@@ -200,43 +200,43 @@ elif choose == "Predicting":
 
         if predict_button:
             if model_select == 'KNN':
-                model = joblib.load('/pkl/knn_model.pkl')
+                model = joblib.load('pkl/knn_model.pkl')
                 pred = model.predict([variable])
 
             if model_select == 'DecisionTree':
-                model = joblib.load('/pkl/DecisionTree.pkl')
+                model = joblib.load('pkl/DecisionTree.pkl')
                 pred = model.predict([variable])
 
             if model_select == 'bagging':
-                model = joblib.load('bagging.pkl')
+                model = joblib.load('pkl/bagging.pkl')
                 pred = model.predict([variable])
 
             if model_select == 'ExtraTree':
-                model = joblib.load('ExtraTree.pkl')
+                model = joblib.load('pkl/ExtraTree.pkl')
                 pred = model.predict([variable])
 
             if model_select == 'RandomForest':
-                model = joblib.load('RandomForest.pkl')
+                model = joblib.load('pkl/RandomForest.pkl')
                 pred = model.predict([variable])
 
             if model_select == 'AdaBoosting':
-                model = joblib.load('AdaBoosting.pkl')
+                model = joblib.load('pkl/AdaBoosting.pkl')
                 pred = model.predict([variable])
 
             if model_select == 'ExtremeBoosting':
-                model = joblib.load('ExtremeBoosting.pkl')
+                model = joblib.load('pkl/ExtremeBoosting.pkl')
                 pred = model.predict([variable])
 
             if model_select == 'GradientBoosing':
-                model = joblib.load('GradientBoosing.pkl')
+                model = joblib.load('pkl/GradientBoosing.pkl')
                 pred = model.predict([variable])
 
             if model_select == 'vote_soft':
-                model = joblib.load('vote_soft.pkl')
+                model = joblib.load('pkl/vote_soft.pkl')
                 pred = model.predict([variable])
 
             if model_select == 'grid_soft':
-                model = joblib.load('grid_soft.pkl')
+                model = joblib.load('pkl/grid_soft.pkl')
                 pred = model.predict([variable])
             else:
                 pass

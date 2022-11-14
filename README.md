@@ -5,12 +5,13 @@
 
 #### <데이터셋: 타이타닉 데이터><br>
   - 출처: https://www.kaggle.com/c/titanic<br>
-  - 선택이유: 모델링 보다는 처음 써보는 streamlit을 활용한 모델을 웹으로 구현하는 부분에 초점을 두고 싶었음.<br>
+  - 모델링 참고: https://www.kaggle.com/code/ldfreeman3/a-data-science-framework-to-achieve-99-accuracy<br>
+  - 데이터 셋 선택이유: 모델링 보다는 처음 써보는 streamlit을 활용한 모델을 웹으로 구현하는 부분에 초점을 두고 싶었음.<br>
+    - 기본 선형회귀부터, 부스팅, 배깅, 랜덤포레스 등 다양한 모델을 적용하였음.
 #### <예시 페이지>
 ![image](https://user-images.githubusercontent.com/105966480/201268970-823d6ba9-46ca-499d-8f1d-17ada1157ec7.png) |![image](https://user-images.githubusercontent.com/105966480/201268931-e7c38c3a-446b-438b-92d4-5ba563d0ef71.png)
 --- | --- | 
-![image](https://user-images.githubusercontent.com/105966480/201269016-b917b9ce-8623-41fc-9f6c-6412f2bf5d40.png) |![image](https://user-images.githubusercontent.com/105966480/201269060-efb8a218-9864-4e7d-95ef-d61071dda403.png)
---- | --- | 
+![image](https://user-images.githubusercontent.com/105966480/201742474-d3fd850e-fda7-4c52-913a-bbeb525e3612.png) |![image](https://user-images.githubusercontent.com/105966480/201269060-efb8a218-9864-4e7d-95ef-d61071dda403.png)
 #### <개선사항>
   1. 그냥 변수를 보면 무슨 내용인지 이해하기 어려움.<br>
     - 그래서 데이터 프레임을 자유롭게 다룰 수 있게 설정하였다.
@@ -30,4 +31,6 @@
       ![image](https://user-images.githubusercontent.com/105966480/201176243-6408100b-0472-4e5c-87c9-4bca5404004a.png)
   3. 데이터 변환 과정에서 차원이 어떻게 변하는지 머리속으로 잘 그리자.<br>
     - ValueError: Expected 2D array, got 1D array instead:<br>
-    ![image](https://user-images.githubusercontent.com/105966480/201177873-bab43a09-ef37-4670-bbdf-689ca8c991af.png)
+    ![image](https://user-images.githubusercontent.com/105966480/201177873-bab43a09-ef37-4670-bbdf-689ca8c991af.png)<br>
+  4. 모델링을 우리 데이터셋에 맞게 수정하고, 웹으로 구현하는게 쉽지 않음을 느꼈다.<br>
+    - 다양한 모델들을 어떻게 보여줄 것인지가 가장 고민이 되었다.
