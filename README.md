@@ -1,11 +1,11 @@
 ![header](https://capsule-render.vercel.app/api?type=waving&color=auto&height=200&section=header&text=KNN%20MODEL%20with%20Streamlit&fontSize=50&animation=fadeIn&fontAlignY=30&desc=Changing%20KNN%20models%20to%20Web%20pages&descAlignY=51&descAlign=62)
 
 # KNN 모델을 이용한 타이타닉 생존자 예측 웹 구축
-  - Link: https://dorae222-streamlit-adapting-knn-s-knn-algorithm-wmnse6.streamlit.app/
+  - Link: https://dorae222-knn-appyling-streamlit-s-knn-algorithm-gixk3h.streamlit.app/
 
 #### <데이터셋: 타이타닉 데이터><br>
   - 출처: https://www.kaggle.com/c/titanic<br>
-  - 선택이유: 모델링 보다는 streamlit을 활용한 모델을 웹으로 구현하는 부분에 초점을 두고 싶었음.<br>
+  - 선택이유: 모델링 보다는 처음 써보는 streamlit을 활용한 모델을 웹으로 구현하는 부분에 초점을 두고 싶었음.<br>
 #### <예시 페이지>
 ![image](https://user-images.githubusercontent.com/105966480/201268970-823d6ba9-46ca-499d-8f1d-17ada1157ec7.png) |![image](https://user-images.githubusercontent.com/105966480/201268931-e7c38c3a-446b-438b-92d4-5ba563d0ef71.png)
 --- | --- | 
