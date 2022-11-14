@@ -185,11 +185,14 @@ elif choose == "Predicting":
         #######################################
         # 네번째 행
         st.write("---")
-        r4_col1= st.columns(1)
+        r4_col1, r4_col2= st.columns(2)
+
         model_option = ('KNN','DecisionTree','bagging','ExtraTree','RandomForest','AdaBoosting','ExtremeBoosting','GradientBoosing','vote_soft','grid_soft')
-        model_select = r4_col1.selectbox("DecisionTree", model_option)
+        model_select = r4_col1.selectbox("model_option", model_option)
+        
         # 예측 버튼
-        predict_button = st.button("예측")
+        predict_button = r4_col2.button("예측")
+        #######################################
         # 예측 결과
         if predict_button:
             if model_select == 'KNN':
