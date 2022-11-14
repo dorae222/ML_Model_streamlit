@@ -187,7 +187,7 @@ elif choose == "Predicting":
         st.write("---")
         r4_col1= st.columns(1)
         model_option = ('KNN','DecisionTree','bagging','ExtraTree','RandomForest','AdaBoosting','ExtremeBoosting','GradientBoosing','vote_soft','grid_soft')
-        model_selcect = r4_col1.selectbox("DecisionTruee", model_option)
+        model_selcect = r4_col1.selectbox("DecisionTree", model_option)
         # 예측 버튼
         predict_button = st.button("예측")
         # 예측 결과
@@ -212,6 +212,8 @@ elif choose == "Predicting":
                 model = joblib.load('vote_soft.pkl')
             if model_selcect == 'grid_soft':
                 model = joblib.load('grid_soft.pkl')
+            else:
+                st.write('올바른 모델을 선택해주세요.')
 
             variable = np.array([Pclass, Age, SibSp, Parch, Fare, Sex_male, Embarked_Q,Embarked_S])
             pred = model.predict([variable])
