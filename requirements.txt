@@ -6,3 +6,4 @@ pandas
 joblib
 plotly
 seaborn
+xgboost
