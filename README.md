@@ -1,7 +1,7 @@
-![header](https://capsule-render.vercel.app/api?type=waving&color=auto&height=200&section=header&text=KNN%20MODEL%20with%20Streamlit&fontSize=50&animation=fadeIn&fontAlignY=30&desc=Changing%20KNN%20models%20to%20Web%20pages&descAlignY=51&descAlign=62)
+![header](https://capsule-render.vercel.app/api?type=waving&color=auto&height=200&section=header&text=ML%20MODEL%20with%20Streamlit&fontSize=50&animation=fadeIn&fontAlignY=30&desc=Changing%20KNN%20models%20to%20Web%20pages&descAlignY=51&descAlign=62)
 
-# KNN 모델을 이용한 타이타닉 생존자 예측 웹 구축
-  - Link: https://dorae222-knn-appyling-streamlit-s-knn-algorithm-gixk3h.streamlit.app/
+# 다양한 머신러닝 모델을 이용한 타이타닉 생존자 예측 웹 구축
+### Link: https://dorae222-knn-appyling-streamlit-s-knn-algorithm-gixk3h.streamlit.app/
 
 #### <데이터셋: 타이타닉 데이터><br>
   - 출처: https://www.kaggle.com/c/titanic<br>
@@ -11,7 +11,7 @@
 #### <예시 페이지>
 ![image](https://user-images.githubusercontent.com/105966480/201268970-823d6ba9-46ca-499d-8f1d-17ada1157ec7.png) |![image](https://user-images.githubusercontent.com/105966480/201268931-e7c38c3a-446b-438b-92d4-5ba563d0ef71.png)
 --- | --- | 
-![image](https://user-images.githubusercontent.com/105966480/201742474-d3fd850e-fda7-4c52-913a-bbeb525e3612.png) |![image](https://user-images.githubusercontent.com/105966480/201269060-efb8a218-9864-4e7d-95ef-d61071dda403.png)
+![image](https://user-images.githubusercontent.com/105966480/201742474-d3fd850e-fda7-4c52-913a-bbeb525e3612.png) |![image](https://user-images.githubusercontent.com/105966480/201743245-0abbeaaa-495e-4445-94c5-9f9fc19200d1.png)
 #### <개선사항>
   1. 그냥 변수를 보면 무슨 내용인지 이해하기 어려움.<br>
     - 그래서 데이터 프레임을 자유롭게 다룰 수 있게 설정하였다.
@@ -20,7 +20,7 @@
   4. 사이드바를 추가하여, 파트 분리
   5. Plotly를 활용한 그래프 삽입
   6. 데이터와 웹의 연결은 아니지만 모델을 형성하기 위해 전처리와 파라미터를 수정<br>
-    - https://github.com/dorae222/personal_study/blob/main/ML_DL/2022-11-09-%5BML%5D%20KNN2.ipynb
+    - https://github.com/dorae222/knn_appyling_streamlit/blob/main/Modeling.ipynb
 #### <작업시 겪었던 난항>
   1. 스케일러도 pkl로 저장해서 새 기준에 대해 transform하려 했지만, 굳이 할 필요가 없었다.
   2. 바보 같지만 .txt를 .text로 저장해서 계속 난항을 겼었는데, 파일명에 주의하자!<br>
@@ -33,4 +33,5 @@
     - ValueError: Expected 2D array, got 1D array instead:<br>
     ![image](https://user-images.githubusercontent.com/105966480/201177873-bab43a09-ef37-4670-bbdf-689ca8c991af.png)<br>
   4. 모델링을 우리 데이터셋에 맞게 수정하고, 웹으로 구현하는게 쉽지 않음을 느꼈다.<br>
-    - 다양한 모델들을 어떻게 보여줄 것인지가 가장 고민이 되었다.
+    - 다양한 모델들을 어떻게 보여줄 것인지가 가장 고민이 되었다.<br>
+    - 또한 모델 성능이 기존보다 떨어지는 것으로 보아, 현재의 전처리 방식에 한계가 있고 수정해야 함을 알 수 있었음.
