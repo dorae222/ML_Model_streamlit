@@ -92,7 +92,7 @@ elif choose == "Visualizing":
         st.plotly_chart(fig)
         st.write("---")
         st.subheader("Plotly를 이용한 ScatterPlot")
-        fig2 = px.scatter_matrix(df,dimensions=df.columns,color="Survived")
+        fig2 = px.scatter_matrix(data,dimensions=data.columns,color="Survived")
         st.plotly_chart(fig2)
 ##################################################################################
 # DataFrame 페이지
