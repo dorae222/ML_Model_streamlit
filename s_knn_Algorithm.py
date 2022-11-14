@@ -90,6 +90,11 @@ elif choose == "Visualizing":
         st.subheader("Plotly를 이용한 Heatmap")
         fig = px.imshow(data.corr(),text_auto=True, color_continuous_scale='RdBu_r', aspect='auto')
         st.plotly_chart(fig)
+        st.write("---")
+        
+        df = px.data.iris()
+        fig2 = px.scatter_matrix(df,dimensions=df.columns,color="Survived")
+        st.plotly_chart(fig2)
 ##################################################################################
 # DataFrame 페이지
 elif choose == "DataFrame":
